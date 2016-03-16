@@ -1,1 +1,2 @@
-# shop
+UI for Internet Shop
+====================
