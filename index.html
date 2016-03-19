@@ -6,69 +6,37 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/app.css">
     </head>
-<body>
-    <header class="header">
-        <nav class="navbar navbar">
-            <ul class="top-header">
-                <li>
-                    <span class="dot">Новосебирск</span>
-                    <span class="arrow">&rarr;</span>
-                    <span class="line">ул. Октябрьская</span>
-                </li>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <ul class="header__menu">
+                    <li>
+                        <span class="navbar__text-dotted">Новосибирск</span>
+                        <span class="navbar__arrow">&rarr;</span>
+                        <span class="navbar__text-underline">ул. Октябрьская</span>
+                    </li>
+                    <li>
+                        <span class="phone"><i class="glyphicon glyphicon-earphone"></i>  (383) 240-80-80, 240-80-00</span>
+                    </li>
+                    <li><span class="navbar__text-underline">Как купить</span></li>
+                    <li><span class="navbar__text-underline">Границы</span></li>
+                    <li><span class="navbar__text-underline">Доставка</span></li>
 
-                <li>
-                    <span class="telefon"><i class="glyphicon glyphicon-earphone"></i>  (383) 240-80-80, 240-80-00</span>
-                </li>
+                    <li class="arsenal">
+                        <span class="navbar__text-dotted">Мой арсенал</span>
+                    </li>
+                    <li><span class="vk">в</span></li>
+                </ul>
+            </nav>
 
-                <li><span class="line">Как купить</span></li>
-                <li><span class="line">Границы</span></li>
-                <li><span class="line">Доставка</span></li>
-
-                <li class="arsenal">
-                    <span class="dot">Мой арсенал</span>
-                </li>
-                <li>
-                    <span class="vk">в</span>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="container-center">
-            <div class="logo">
-                <img src="images/logo.jpg" alt="logo">
-                <p class="logo-text">Мы работаем на ваш талант !</p>
-            </div>
-
-            <div class="searcht">
-                <form class="navbar-form" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Поиск товаров">
-                        <i class="glyphicon glyphicon-search"></i>
-                    </div>
-                </form>
-            </div>
-
-            <div class="basket">
-                <img class="images-basket" src="images/basket.png" alt="basket">
-                <p> Корзина <span class="badge">25</span></p>
-            </div>
-        </div>
-
-        <div class="container">
-
-        </div>
-
-        <div class="row">
-            <div class="container-fluid">
-                <div class="col-sm-4">
-                    <div class="logo">
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="col-sm-4 header__logo">
                         <img src="images/logo.jpg" alt="logo">
                         <p class="logo-text">Мы работаем на ваш талант !</p>
                     </div>
-                </div>
 
-                <div class="col-sm-4">
-                    <div class="searcht">
+                    <div class="col-sm-4 header__search">
                         <form class="navbar-form" role="search">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Поиск товаров">
@@ -76,22 +44,21 @@
                             </div>
                         </form>
                     </div>
-                </div>
 
-                <div class="col-sm-4">
-                    <div class="basket">
-                        <img class="images-basket" src="images/basket.png" alt="basket">
-                        <p> Корзина <span class="badge">25</span></p>
+                    <div class="col-sm-4 header__cart">
+                        <ul class="list__cart">
+                            <li><img class="images__cart" src="images/basket.png" alt="basket"></li>
+                            <li><p class="text__cart">Корзина</p></li>
+                            <li><span class="badge">25</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div>
-            <img class="images" src="images/header-image.jpg" alt="header-image">
-            <p>Привет как дела?</p>
-        </div>
-    </header>
-
-</body>
+            <div>
+                <img class="" src="images/header-image.jpg" alt="header-image">
+                <p>Привет как дела?</p>
+            </div>
+        </header>
+    </body>
 </html>
