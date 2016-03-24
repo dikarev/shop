@@ -8,7 +8,6 @@
 .header .navbar {
     background-color: #af9559;
     border: solid #af9559;
-    margin: 0 auto;
     font-family: tahoma;
     font-size: 14px;
 }
@@ -27,6 +26,7 @@
 }
 .header .navbar__arrow {
     padding: 0 2px;
+    color: #ffffff;
 }
 .header .navbar .navbar__text-underline {
     border-bottom: 1px solid #fff;
@@ -49,11 +49,12 @@
     padding: 0 6px 2px;
 }
 /* cotaener-center */
-.header .row {
+.header .container__center {
     border-bottom: 1px solid #d9d9d9;
     display: inline-block;
     margin: 0 auto;
     width: 1200px;
+    padding: 0px 0px 15px 115px;
 }
 .header .header__logo .logo-text {
     color: #777777;
@@ -63,7 +64,6 @@
     border: 1px solid #919191;
     font-size: 14px;
     height: 40px;
-    width: 380px;
 }
 .header .header__search .glyphicon {
     color: #919191;
@@ -71,24 +71,30 @@
     font-size: 14px;
     height: 25px;
     margin-left: -30px;
-    width: 40px;
 }
 .header .header__cart {
     background-color: #f1f1f1;
     border-radius: 4px;
     border: 2px solid #919191;
     height: 40px;
-    width: 150px;
+    width: 160px;
+    margin-top: 8px;
+}
+.header .header__cart .list__cart {
+    padding: 5px 0px;
 }
 .header .header__cart .list__cart >li {
     display: inline-block;
+    padding-left: 1px;
 }
-.header .header__cart .list__cart .text__cart {
+.header .header__cart .text__cart {
     margin: 0;
+    font-size: 14px;
+    padding-top: 2px;
 }
 .header .header__cart .list__cart .images__cart {
-
 }
+
 .header .header__cart .badge {
     background-color: #c19d47;
 }
