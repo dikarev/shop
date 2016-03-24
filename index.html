@@ -2,155 +2,179 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>shop</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/app.css">
+        <title>Shop</title>
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="assets/css/app.css">
     </head>
     <body>
-        <header class="header">
-            <nav class="navbar">
-                <ul class="header__menu">
-                    <li>
-                        <span class="navbar__text-dotted">Новосибирск</span>
-                        <span class="navbar__arrow">&rarr;</span>
-                        <span class="navbar__text-underline">ул. Октябрьская</span>
-                    </li>
-                    <li>
-                        <span class="phone"><i class="glyphicon glyphicon-earphone"></i>  (383) 240-80-80, 240-80-00</span>
-                    </li>
-                    <li><span class="navbar__text-underline">Как купить</span></li>
-                    <li><span class="navbar__text-underline">Границы</span></li>
-                    <li><span class="navbar__text-underline">Доставка</span></li>
+        <div class="layout">
+            <header class="header">
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="col-sm-3">
+                            <span class="text__dotted">Новосибирск</span>
+                            <span>&rarr;</span>
+                            <span class="text__underline">ул. Октябрьская</span>
+                        </div>
 
-                    <li class="arsenal">
-                        <span class="navbar__text-dotted">Мой арсенал</span>
-                    </li>
-                    <li><span class="vk">в</span></li>
-                </ul>
-            </nav>
-
-            <div class="row container__center">
-                <div class="container-fluid">
-                    <div class="col-sm-4 header__logo">
-                        <img src="images/logo.jpg" alt="logo">
-                        <p class="logo-text">Мы работаем на ваш талант !</p>
-                    </div>
-
-                    <div class="col-sm-4 header__search">
-                        <form class="navbar-form" role="search">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Поиск товаров">
-                                <i class="glyphicon glyphicon-search"></i>
+                        <div class="col-sm-3">
+                            <div class="navbar__phone">
+                                <i class="glyphicon glyphicon-earphone"></i>
+                                (383) 240-80-80, 240-80-00
                             </div>
-                        </form>
-                    </div>
+                        </div>
 
-                    <div class="col-sm-4 header__cart">
-                        <ul class="list__cart">
-                            <li><img class="images__cart" src="images/basket.png" alt="basket"></li>
-                            <li><p class="text__cart">Корзина</p></li>
-                            <li><span class="badge">25</span></li>
-                        </ul>
+                        <div class="col-sm-4">
+                            <ul class="list-unstyled clearfix navbar__pages">
+                                <li class="pull-left">
+                                    <a class="link text__underline">Как купить</a>
+                                </li>
+
+                                <li class="pull-left">
+                                    <a class="link text__underline">Границы</a>
+                                </li>
+
+                                <li class="pull-left">
+                                    <a class="link text__underline">Доставка</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-2">
+                            <a class="link text__dotted">Мой арсенал</a>
+
+                            <span class="social__button social__button-vk"></span>
+                        </div>
+                    </div>
+                </nav>
+
+                <!------------------------------------------------------------->
+                <div class="row container__center">
+                    <div class="container-fluid">
+                        <div class="col-sm-4 header__logo">
+                            <img src="assets/img/logo.jpg" alt="Logo">
+                            <p class="logo-text">Мы работаем на ваш талант !</p>
+                        </div>
+
+                        <div class="col-sm-4 header__search">
+                            <form class="navbar-form" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Поиск товаров">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-sm-4 header__cart">
+                            <ul class="list__cart">
+                                <li><img class="images__cart" src="assets/img/basket.png" alt="basket"></li>
+                                <li><p class="text__cart">Корзина</p></li>
+                                <li><span class="badge">25</span></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <ul class="nav nav-tabs">
-                <li role="presentation"><a href="#">Home</a></li>
-                <li role="presentation"><a href="#">Profile</a></li>
-                <li role="presentation"><a href="#">Messages</a></li>
-            </ul>
-
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Музыкальные инструменты
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Гитары</a></li>
-                    <li><a href="#">Ударные</a></li>
-                    <li><a href="#">Клавишные</a></li>
-                    <li><a href="#">Духовые</a></li>
-                    <li><a href="#">Смычковые</a></li>
-                    <li><a href="#">Народные</a></li>
+                <ul class="nav nav-tabs">
+                    <li role="presentation"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">Profile</a></li>
+                    <li role="presentation"><a href="#">Messages</a></li>
                 </ul>
 
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Dj
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Гитары</a></li>
-                    <li><a href="#">Ударные</a></li>
-                    <li><a href="#">Клавишные</a></li>
-                    <li><a href="#">Духовые</a></li>
-                    <li><a href="#">Смычковые</a></li>
-                    <li><a href="#">Народные</a></li>
-                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Музыкальные инструменты
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Гитары</a></li>
+                        <li><a href="#">Ударные</a></li>
+                        <li><a href="#">Клавишные</a></li>
+                        <li><a href="#">Духовые</a></li>
+                        <li><a href="#">Смычковые</a></li>
+                        <li><a href="#">Народные</a></li>
+                    </ul>
 
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Шоу-техника
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Гитары</a></li>
-                    <li><a href="#">Ударные</a></li>
-                    <li><a href="#">Клавишные</a></li>
-                    <li><a href="#">Духовые</a></li>
-                    <li><a href="#">Смычковые</a></li>
-                    <li><a href="#">Народные</a></li>
-                </ul>
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Dj
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Гитары</a></li>
+                        <li><a href="#">Ударные</a></li>
+                        <li><a href="#">Клавишные</a></li>
+                        <li><a href="#">Духовые</a></li>
+                        <li><a href="#">Смычковые</a></li>
+                        <li><a href="#">Народные</a></li>
+                    </ul>
 
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Студия
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Гитары</a></li>
-                    <li><a href="#">Ударные</a></li>
-                    <li><a href="#">Клавишные</a></li>
-                    <li><a href="#">Духовые</a></li>
-                    <li><a href="#">Смычковые</a></li>
-                    <li><a href="#">Народные</a></li>
-                </ul>
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Шоу-техника
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Гитары</a></li>
+                        <li><a href="#">Ударные</a></li>
+                        <li><a href="#">Клавишные</a></li>
+                        <li><a href="#">Духовые</a></li>
+                        <li><a href="#">Смычковые</a></li>
+                        <li><a href="#">Народные</a></li>
+                    </ul>
 
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Звук
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Гитары</a></li>
-                    <li><a href="#">Ударные</a></li>
-                    <li><a href="#">Клавишные</a></li>
-                    <li><a href="#">Духовые</a></li>
-                    <li><a href="#">Смычковые</a></li>
-                    <li><a href="#">Народные</a></li>
-                </ul>
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Студия
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Гитары</a></li>
+                        <li><a href="#">Ударные</a></li>
+                        <li><a href="#">Клавишные</a></li>
+                        <li><a href="#">Духовые</a></li>
+                        <li><a href="#">Смычковые</a></li>
+                        <li><a href="#">Народные</a></li>
+                    </ul>
 
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Свет
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Гитары</a></li>
-                </ul>
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Звук
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Гитары</a></li>
+                        <li><a href="#">Ударные</a></li>
+                        <li><a href="#">Клавишные</a></li>
+                        <li><a href="#">Духовые</a></li>
+                        <li><a href="#">Смычковые</a></li>
+                        <li><a href="#">Народные</a></li>
+                    </ul>
 
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Коммуникация
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Гитары</a></li>
-                </ul>
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Свет
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Гитары</a></li>
+                    </ul>
 
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Стойки
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#"></a></li>
-                </ul>
-            </div>
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Коммуникация
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Гитары</a></li>
+                    </ul>
 
-            <div>
-                <img class="" src="images/header-image.jpg" alt="header-image">
-                <p>Привет как дела?</p>
-            </div>
-        </header>
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Стойки
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+                <div>
+                    <img class="" src="assets/img/header-image.jpg" alt="header-image">
+                    <p>Привет как дела?</p>
+                </div>
+            </header>
+        </div>
+
+        <script src="vendor/jquery/jquery-2.2.2.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/module.min.js"></script>
+        <script src="assets/js/app.js"></script>
     </body>
 </html>

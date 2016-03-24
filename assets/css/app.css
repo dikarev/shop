@@ -1,53 +1,58 @@
-/* header */
-.header {
-    height: 670px;
-    margin: 0 auto;
-    width: 1200px;
-}
-/* header__menu */
-.header .navbar {
-    background-color: #af9559;
-    border: solid #af9559;
+/* layout */
+.layout {
     font-family: tahoma;
     font-size: 14px;
 }
-.header .navbar .header__menu {
-    padding: 10px 50px 10px 130px;
+.link:hover {
+    text-decoration: none;
 }
-.header .navbar ul>li {
-    float: left;
-    list-style: none;
-    padding-right: 15px;
-}
-.header .navbar .navbar__text-dotted {
+
+/* text format */
+.text__dotted {
     border-bottom: 1px dotted #fff;
-    color: white;
-    text-decoration: none;
 }
-.header .navbar__arrow {
-    padding: 0 2px;
-    color: #ffffff;
-}
-.header .navbar .navbar__text-underline {
+.text__underline {
     border-bottom: 1px solid #fff;
-    color: white;
-    text-decoration: none;
 }
-.header .navbar .phone {
-    color: white;
-    padding: 0px 40px 0 60px;
-    text-decoration: none;
+
+/* social buttons */
+.social__button {
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 1px solid #e0e0e0;
+    font-weight: bold;
+    padding: 11px;
 }
-.header .navbar .arsenal {
-    padding-left: 25px;
+.social__button-vk {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAAAolt3jAAAAM1BMVEUAAAD+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7EB9fYAAAAEHRSTlMAML9gXz8J6tOqliIXqYJQZvLX/QAAAEhJREFUCNeVzUkKwDAMBEFZi/ck8//XxgSC5KP7ICgYEGWKLZ42RVR1/Ez4MqdYQXMmYtxOZtQceBX0ODZgBD7r+LgBdfvbJ73YOQMa4CeqxQAAAABJRU5ErkJggg==');
+    background-position: 2px 2px;
+    float: right;
+    margin-top: 15px;
 }
-.header .navbar .vk {
-    border-radius: 10px;
-    border: 1px solid #fff;
+
+/* navbar */
+.navbar {
+    background-color: #af9559;
+    border-radius: 0;
     color: #fff;
-    margin-left: 10px;
-    padding: 0 6px 2px;
+    line-height: 50px;
 }
+.navbar .link {
+    color: #fff;
+    margin-right: 20px;
+}
+.navbar .glyphicon-earphone {
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 6px;
+    margin-top: 18px;
+}
+.navbar__pages {
+    margin: 0;
+}
+
+/******************************************************************************/
 /* cotaener-center */
 .header .container__center {
     border-bottom: 1px solid #d9d9d9;
