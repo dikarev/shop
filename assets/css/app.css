@@ -56,37 +56,33 @@
 }
 /******************************************************************************/
 /* cotaener-center */
-.container__logo {
-}
-.line__color {
-    background-color: #ef383f;
-    border: none;
-    height: 2px;
-    margin: 0;
-}
 .header__logo .logo__text {
     color: #777777;
     text-align: center;
 }
-.header__search .form-control  {
-    border: 1px solid #919191;
+.search__group {
     font-size: 14px;
     height: 40px;
+    outline: none;
 }
-.header__search .glyphicon {
-    color: #919191;
-    cursor: pointer;
+.search__input {
+    background-color: #fff;
+    color: #d0d0d0;
     font-size: 14px;
-    height: 25px;
-    margin-left: -30px;
 }
+.search__button {
+    background-color: #fff;
+    border-left: none;
+    border: solid #fff;
+    outline: none;
+}
+
 .header__cart {
     background-color: #f1f1f1;
     border-radius: 4px;
     border: 2px solid #919191;
     height: 40px;
     width: 160px;
-
 }
 .header__cart .list__cart {
     padding: 5px 0px;
@@ -100,9 +96,70 @@
     font-size: 14px;
     padding-top: 2px;
 }
-.header .header__cart .list__cart .images__cart {
-}
-
 .header__cart .badge {
     background-color: #c19d47;
+}
+.line__color {
+    background-color: #ef383f;
+    border: none;
+    height: 2px;
+    margin: 0;
+}
+hr {
+    margin: 5px 0;
+}
+.item {
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+}
+.fon__slider {
+    background-color: #6d727d;
+    margin-bottom: 20px;
+}
+.carousel-indicators
+.active {
+    background-color: #FF0000;
+}
+
+/* two carousel */
+.carousel__brands {
+    float: left;
+    width: 85%;
+    overflow: hidden;
+}
+.carousel__list {
+    list-style: none;
+    padding: 0px;
+    position: relative;
+    width: 10000px;
+}
+.carousel-element {
+    display: block;
+    float: left;
+    margin-right: 35px;
+}
+.carousel-arrow-left, .carousel-arrow-right {
+    display: block;
+    float: left;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid grey;
+    background-color: lightgrey;
+}
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+     background-color: grey;
+}
+.carousel-arrow-left {
+    margin-right: 50px;
+}
+.carousel-arrow-right {
+    float: right;
+    margin-left: 25px;
+}
+.glyphicon-menu-left, .glyphicon-menu-right {
+    font-size: 20px;
 }

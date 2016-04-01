@@ -47,19 +47,19 @@
                     </div>
                 </nav>
 
-                <div class="container container__logo">
-                        <div class="col-sm-4 header__logo">
+                <div class="container">
+                        <div class="col-sm-5 header__logo">
                             <div class="input-group">
                             <img src="assets/img/logo.jpg" alt="Logo">
                             <p class="logo__text">Мы работаем на ваш талант !</p>
                             </div>
                         </div>
 
-                        <div class="col-sm-5 search__group">
+                        <div class="col-sm-4">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                                <span class="input-group-addon">
-                                    <button type="submit">
+                                <input type="text" class="form-control search__group" placeholder="Поиск товаров">
+                                <span class="input-group-addon search__input">
+                                    <button class="search__button" type="submit">
                                         <span class="glyphicon glyphicon-search"></span>
                                     </button>
                                 </span>
@@ -68,13 +68,54 @@
 
                         <div class="col-sm-2 header__cart">
                             <ul class="list__cart">
-                                <li><img class="images__cart" src="assets/img/basket.png" alt="basket"></li>
+                                <li><img src="assets/img/basket.png" alt="basket"></li>
                                 <li><p class="text__cart">Корзина</p></li>
                                 <li><span class="badge">25</span></li>
                             </ul>
                         </div>
                     </div>
                 <hr>
+
+                <div class="container container__catalog">
+                        <ul class="nav nav-pills">
+                            <li>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Акция
+                                </a>
+                            </li>
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                     Музыкальные инструменты
+                                    </a>
+                                <ul class="dropdown-menu">
+                                    <li>ghbdtn</li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                      Выпадающий список
+                                    </a>
+                                <ul class="dropdown-menu">
+                                    <li>ghbdtn</li>
+                                    <li>ghbdtn</li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    gggg
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>ghbdtn</li>
+                                    <li>ghbdtn</li>
+                                </ul>
+                            </li>
+                            </ul>
+                    </div>
+
+
 
                 <!------------------------------------------------------------->
                 <ul class="nav nav-tabs">
@@ -85,27 +126,61 @@
 
                 <hr class="line__color">
 
-                <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true">
-                        Музыкальные инструменты
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Гитары</a></li>
-                        <li><a href="#">Ударные</a></li>
-                        <li><a href="#">Клавишные</a></li>
-                        <li><a href="#">Духовые</a></li>
-                        <li><a href="#">Смычковые</a></li>
-                        <li><a href="#">Народные</a></li>
-                    </ul>
+                <div class="fon__slider">
+                    <div class="container">
+                        <div id="myCarousel" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                            </ol>
+
+                            <div class="carousel-inner" >
+                                <div class="item active">
+                                    <img src="assets/img/Synthesizer.png" alt="Synthesizer">
+                                </div>
+
+                                <div class="item">
+                                    <img src="assets/img/saxophone.png" alt="Saxophone">
+                                </div>
+
+                                <div class="item">
+                                    <img src="assets/img/saxophone.png" alt="Flower">
+                                </div>
+
+                                <div class="item">
+                                    <img src="assets/img/Synthesizer.png" alt="Flower">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <img class="" src="assets/img/header-image.jpg" alt="header-image">
-                    <p>Привет как дела?</p>
+                <div class="container">
+                    <div class="carousel-arrow-left"><span class="glyphicon glyphicon-menu-left"></span></div>
+
+                    <div class="carousel__brands">
+                        <ul class="carousel__list">
+                            <li class="carousel-element"><img src="assets/img/abk.png" alt="ABK"></li>
+                            <li class="carousel-element"><img src="assets/img/aria.png" alt="ARIA"></li>
+                            <li class="carousel-element"><img src="assets/img/jts.png" alt="JTS"></li>
+                            <li class="carousel-element"><img src="assets/img/pioner.png" alt="Pioner"></li>
+                            <li class="carousel-element"><img src="assets/img/robe.png" alt="ROBE"></li>
+                            <li class="carousel-element"><img src="assets/img/daddario.png" alt="DAddario"></li>
+                            <li class="carousel-element"><img src="assets/img/schecter.png" alt="Schecter"></li>
+                            <li class="carousel-element"><img src="assets/img/pioner.png" alt="Pioner"></li>
+                            <li class="carousel-element"><img src="assets/img/pioner.png" alt="Pioner"></li>
+                            <li class="carousel-element"><img src="assets/img/pioner.png" alt="Pioner"></li>
+                        </ul>
+                    </div>
+
+                    <div class="carousel-arrow-right"><span class="glyphicon glyphicon-menu-right"></span></div>
                 </div>
             </header>
         </div>
 
+        <script src="shop/assets/js/app.js"></script>
         <script src="vendor/jquery/jquery-2.2.2.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/module.min.js"></script>
