@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Shop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="assets/css/app.css">
@@ -53,8 +54,8 @@
                         <p class="logo__text">Мы работаем на ваш талант !</p>
                     </div>
 
-                    <div class="col-sm-4">
-                        <div class="input-group">
+                    <div class="col-sm-4 header__search">
+                        <div class="input-group search__inner">
                             <input type="text" class="form-control search__group" placeholder="Поиск товаров">
                             <span class="input-group-addon search__input">
                                 <button class="search__button" type="submit">
@@ -64,12 +65,14 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-2 header__cart">
-                        <ul class="list__cart">
-                            <li><img src="assets/img/basket.png" alt="basket"></li>
-                            <li><p class="text__cart">Корзина</p></li>
-                            <li><span class="badge">25</span></li>
-                        </ul>
+                    <div class="col-sm-3 cart">
+                        <div class="header__cart">
+                            <ul class="list__cart">
+                                <li><img src="assets/img/basket.png" alt="basket"></li>
+                                <li><p class="text__cart">Корзина</p></li>
+                                <li><span class="badge">25</span></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <hr>
@@ -164,7 +167,7 @@
 
 
 
-                <!------------------------------------------------------------->
+                <!-- last changes -->
 
                 <div class="dropdown">
                     <button class="dropdown-toggle" type="button" data-toggle="dropdown">Выпадающий список
@@ -178,31 +181,56 @@
 
                 <hr class="line__color">
 
-                <div class="fon__slider">
+                <!-- header__slider -->
+                <div class="layout__slider slider">
                     <div class="container">
-                        <div id="myCarousel" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#myCarousel" data-slide-to="1"></li>
-                                <li data-target="#myCarousel" data-slide-to="2"></li>
-                                <li data-target="#myCarousel" data-slide-to="3"></li>
-                            </ol>
+                        <div class="slider__inner">
+                            <div class="slider__item">
+                                <img class="slider__image" src="assets/img/synthesizer.png" alt="Synthesizer">
 
-                            <div class="carousel-inner" >
-                                <div class="item active">
-                                    <img src="assets/img/synthesizer.png" alt="Synthesizer">
+                                <div class="row slider__description">
+                                    <div class="col-sm-6 col-sm-offset-6">
+                                        <div class="slider__item-text">
+                                            eyrguvwoeiugv[aogvoyedb pweo8rvygyufhkjv bd9rufg
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
 
-                                <div class="item">
-                                    <img src="assets/img/saxophone.png" alt="Saxophone">
+                            <div class="slider__item">
+                                <img class="slider__image" src="assets/img/saxophone.png" alt="Saxophone">
+
+                                <div class="row slider__description">
+                                    <div class="col-sm-6 col-sm-offset-6">
+                                        <div class="slider__item-text">
+                                            eyrguvwoeiugv[aogvoyedb pweo8rvygyufhkjv bd9rufg
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
 
-                                <div class="item">
-                                    <img src="assets/img/synthesizer.png" alt="Flower">
+
+                            <div class="slider__item">
+                                <img class="slider__image" src="assets/img/synthesizer.png" alt="Synthesizer">
+
+                                <div class="row slider__description">
+                                    <div class="col-sm-6 col-sm-offset-6">
+                                        <div class="slider__item-text">
+                                            eyrguvwoeiugv[aogvoyedb pweo8rvygyufhkjv bd9rufg
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
 
-                                <div class="item">
-                                    <img src="assets/img/saxophone.png" alt="Flower">
+                            <div class="slider__item">
+                                <img class="slider__image" src="assets/img/saxophone.png" alt="Saxophone">
+
+                                <div class="row slider__description">
+                                    <div class="col-sm-6 col-sm-offset-6">
+                                        <div class="slider__item-text">
+                                            eyrguvwoeiugv[aogvoyedb pweo8rvygyufhkjv bd9rufg
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
