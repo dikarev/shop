@@ -11,9 +11,9 @@
 
 
 $(document).ready(function() {
-    var leftUIEl = $('.slider-arrow-left');
-    var rightUIEl = $('.slider-arrow-right');
-    var elementsList = $('.slider-list');
+    var leftUIEl = $('.carousel-arrow-left');
+    var rightUIEl = $('.carousel-arrow-right');
+    var elementsList = $('.carousel__list');
 
     var pixelsOffset = 125;
     var currentLeftValue = 0;
