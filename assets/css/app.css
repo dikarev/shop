@@ -141,45 +141,44 @@
     margin-top: 20%;
 }
 
-/* two carousel */
-.carousel__brands {
-    float: left;
-    width: 85%;
-    overflow: hidden;
-}
-.carousel__list {
-    list-style: none;
-    padding: 0px;
+/* carousel */
+.carousel {
     position: relative;
-    width: 10000px;
 }
-.carousel-element {
-    display: block;
+.carousel__inner {
+    overflow: hidden;
+    position: relative;
+}
+.carousel .carousel__list {
+    position: relative;
+    width: 20000em;
+}
+.carousel .carousel__list-item {
     float: left;
-    margin-right: 35px;
+    text-align: center;
+    width: 190px;
 }
-.carousel-arrow-left, .carousel-arrow-right {
+.carousel__image {
     display: block;
-    float: left;
-    margin-top: 10px;
-    padding: 5px;
-    border: 1px solid grey;
-    background-color: lightgrey;
+    height: auto !important;
+    margin: 0 auto;
+    max-width: 100%;
 }
-.carousel-arrow-left:hover, .carousel-arrow-right:hover {
-    cursor: pointer;
-     background-color: grey;
+.carousel__control-prev,
+.carousel__control-next {
+    background: #4E443C;
+    height: 30px;
+    margin-top: -15px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    top: 50%;
+    width: 30px;
 }
-.carousel-arrow-left {
-    margin-right: 50px;
+.carousel__control-prev {
+    left: -40px;
 }
-.carousel-arrow-right {
-    float: right;
-    margin-left: 25px;
-}
-.glyphicon-menu-left, .glyphicon-menu-right {
-    font-size: 20px;
-}
-.tabbable {
-    display: block;
+.carousel__control-next {
+    right: -40px;
 }
