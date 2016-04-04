@@ -109,6 +109,44 @@
 .cart .header__cart .badge {
     background-color: #c19d47;
 }
+/* categories */
+.categories {
+    display: inline-block;
+    padding: 0;
+}
+.categories .categories__dropdown {
+    float: left;
+    list-style: none;
+    margin-right: 25px;
+}
+.categories .categories__dropdown-link {
+    text-decoration: none;
+}
+.categories .categories__dropdown-link:hover  {
+    background-color: #ef383f;
+    border-radius: 25px;
+    color: #fff;
+    padding: 7px 10px;
+}
+.categories .categories__dropdown .categories__list {
+    background: #333;
+    display: none;
+    list-style: none;
+}
+.categories .categories__dropdown:hover .categories__list {
+    display: block;
+    position: relative;
+    top: 10px;
+}
+.categories .categories__dropdown .categories__list .categories__list-item {
+    list-style: none;
+    position: relative;
+}
+.categories .categories__dropdown .categories__list .categories__list-item .categories__complection {
+    opacity: 0.9;
+    text-decoration: none;
+}
+
 .line__color {
     background-color: #ef383f;
     border: none;
