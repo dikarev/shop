@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <title>Shop</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-theme.css">
         <link rel="stylesheet" href="assets/css/app.css">
     </head>
     <body>
@@ -80,23 +80,98 @@
                 <div class="container">
                     <ul class="categories">
                         <li class="categories__dropdown">
-                            <a href="" class="categories__dropdown-link">Музыкальные инструменты</a>
+                            <a href="#" class="btn btn-link acthii">Акции</a>
+                        </li>
+
+                        <li class="categories__dropdown">
+                            <a href="" class="btn btn-link categories__dropdown-link">Музыкальные инструменты</a>
                             <ul class="categories__list">
-                                <li class="categories__list-item"><a href="" class="categories__complection">Гитары</a></li>
-                                <li class="categories__list-item"><a href="" class="categories__complection">Ударные</a></li>
-                                <li class="categories__list-item"><a href="" class="categories__complection">Клавишные</a></li>
-                                <li class="categories__list-item"><a href="" class="categories__complection">Духовые</a></li>
-                                <li class="categories__list-item"><a href="" class="categories__complection">Смычковые</a></li>
-                                <li class="categories__list-item"><a href="" class="categories__complection">Народные</a></li>
+                                <li class="categories__list-item">
+                                    <a href="#" class="btn btn-link  categories__complection">Гитары</a>
+                                    <ul class="categories__complection-list">
+                                        <li class="">Тарелки</li>
+                                        <li class="">Тренировочные пэды</li>
+                                        <li class="">пластинки</li>
+                                    </ul>
+                                </li>
+
+                                <li class="categories__list-item">
+                                    <a href="#" class="btn btn-link categories__complection">Ударные</a>
+                                </li>
+
+                                <li class="categories__list-item">
+                                    <a href="" class="btn btn-link categories__complection">Клавишные</a>
+                                </li>
+
+                                <li class="categories__list-item">
+                                    <a href="" class="btn btn-link categories__complection">Духовые</a>
+                                </li>
+
+                                <li class="categories__list-item">
+                                    <a href="" class="btn btn-link categories__complection">Смычковые</a>
+                                </li>
+
+                                <li class="categories__list-item">
+                                    <a href="" class="btn btn-link categories__complection">Народные</a>
+                                </li>
                             </ul>
                         </li>
 
                         <li class="categories__dropdown">
-                            <a href="" class="categories__dropdown-link">Музыкальные инструменты</a>
+                            <a href="" class="btn btn-link categories__dropdown-link">DJ</a>
                             <ul class="categories__list">
-                                <li class="categories__"><a href="" class="categories__">Гитары</a></li>
-                                <li class="categories__"><a href="" class="categories__">Ударные</a></li>
-                                <li class="categories__"><a href="" class="categories__">Клавишные</a></li>
+                                <li class="categories__list-item">
+                                    <a href="#" class="btn btn-link  categories__complection">Гитары</a>
+                                </li>
+
+                                <li class="categories__list-item">
+                                    <a href="#" class="btn btn-link categories__complection">Ударные</a>
+                                </li>
+
+                                <li class="categories__list-item">
+                                    <a href="" class="btn btn-link categories__complection">Клавишные</a>
+                                </li>
+
+                                <li class="categories__list-item">
+                                    <a href="" class="btn btn-link categories__complection">Духовые</a>
+                                </li>
+
+                                <li class="categories__list-item">
+                                    <a href="" class="btn btn-link categories__complection">Смычковые</a>
+                                </li>
+
+                                <li class="categories__list-item">
+                                    <a href="" class="btn btn-link categories__complection">Народные</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="categories__dropdown">
+                            <a href="" class="btn btn-link categories__dropdown-link">Шоу-техника</a>
+                            <ul class="categories__list">
+                                <li class="categories__list-item">
+                                    <a href="#" class="btn btn-link  categories__complection">Гитары</a>
+                                </li>
+
+                                <li class="categories__list-item">
+                                    <a href="#" class="btn btn-link categories__complection">Ударные</a>
+                                </li>
+
+                                <li class="categories__list-item">
+                                    <a href="" class="btn btn-link categories__complection">Клавишные</a>
+                                </li>
+
+                                <li class="categories__list-item">
+                                    <a href="" class="btn btn-link categories__complection">Духовые</a>
+                                </li>
+
+                                <li class="categories__list-item">
+                                    <a href="" class="btn btn-link categories__complection">Смычковые</a>
+                                </li>
+
+                                <li class="categories__list-item">
+                                    <a href="" class="btn btn-link categories__complection">Народные</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -105,54 +180,82 @@
                 <hr class="line__color">
 
                 <!-- header__slider -->
-                <div class="layout__slider slider">
-                    <div class="container">
-                        <div class="slider__inner">
-                            <div class="slider__item">
-                                <img class="slider__image" src="assets/img/synthesizer.png" alt="Synthesizer">
+                <div id="carousel" class="carousel slide">
+                    <!-- slider indicators -->
+                    <ol class="carousel-indicators  carousel__buttom">
+                        <li class="active" data-target="#carousel" data-slide-to="0"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                        <li data-target="#carousel" data-slide-to="3"></li>
+                    </ol>
 
-                                <div class="row slider__description">
-                                    <div class="col-sm-6 col-sm-offset-6">
-                                        <div class="slider__item-text">
-                                            eyrguvwoeiugv[aogvoyedb pweo8rvygyufhkjv bd9rufg
-                                        </div>
+                    <!-- indicotors slide -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="img-responsive images" src="assets/img/synthesizer.png" alt="Synthesizer">
+
+                            <div class="row slider__description">
+                                <div class="col-sm-6 col-sm-offset-6">
+                                    <div class="slider__item-text">
+                                        Новинки
+                                        <h1> ARIA - MAC-STD</h1>
+                                        <p>
+                                            Станьте ближе к своей любомой музыке с P5 Series 2. У последней версии
+                                            полностью обновлена конструкция динамиков, что подняло качество звука на новый
+                                            уровень, а материалы высокого качества обеспечивает комфорт.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive images" src="assets/img/saxophone.png" alt="Saxophone">
 
-                            <div class="slider__item">
-                                <img class="slider__image" src="assets/img/saxophone.png" alt="Saxophone">
-
-                                <div class="row slider__description">
-                                    <div class="col-sm-6 col-sm-offset-6">
-                                        <div class="slider__item-text">
-                                            eyrguvwoeiugv[aogvoyedb pweo8rvygyufhkjv bd9rufg
-                                        </div>
+                            <div class="row slider__description">
+                                <div class="col-sm-6 col-sm-offset-6">
+                                    <div class="slider__item-text">
+                                        Новинки
+                                        <h1> ARIA - MAC-STD</h1>
+                                        <p>
+                                            Станьте ближе к своей любомой музыке с P5 Series 2. У последней версии
+                                            полностью обновлена конструкция динамиков, что подняло качество звука на новый
+                                            уровень, а материалы высокого качества обеспечивает комфорт.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive images" src="assets/img/synthesizer.png" alt="Synthesizer">
 
-
-                            <div class="slider__item">
-                                <img class="slider__image" src="assets/img/synthesizer.png" alt="Synthesizer">
-
-                                <div class="row slider__description">
-                                    <div class="col-sm-6 col-sm-offset-6">
-                                        <div class="slider__item-text">
-                                            eyrguvwoeiugv[aogvoyedb pweo8rvygyufhkjv bd9rufg
-                                        </div>
+                            <div class="row slider__description">
+                                <div class="col-sm-6 col-sm-offset-6">
+                                    <div class="slider__item-text">
+                                        Новинки
+                                        <h1> ARIA - MAC-STD</h1>
+                                        <p>
+                                            Станьте ближе к своей любомой музыке с P5 Series 2. У последней версии
+                                            полностью обновлена конструкция динамиков, что подняло качество звука на новый
+                                            уровень, а материалы высокого качества обеспечивает комфорт.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="slider__item">
-                                <img class="slider__image" src="assets/img/saxophone.png" alt="Saxophone">
+                        <div class="item">
+                            <img class="img-responsive images" src="assets/img/synthesizer.png" alt="Synthesizer">
 
-                                <div class="row slider__description">
-                                    <div class="col-sm-6 col-sm-offset-6">
-                                        <div class="slider__item-text">
-                                            eyrguvwoeiugv[aogvoyedb pweo8rvygyufhkjv bd9rufg
-                                        </div>
+                            <div class="row slider__description">
+                                <div class="col-sm-6 col-sm-offset-6">
+                                    <div class="slider__item-text">
+                                        Новинки
+                                        <h1> ARIA - MAC-STD</h1>
+                                        <p>
+                                            Станьте ближе к своей любомой музыке с P5 Series 2. У последней версии
+                                            полностью обновлена конструкция динамиков, что подняло качество звука на новый
+                                            уровень, а материалы высокого качества обеспечивает комфорт.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -193,6 +296,7 @@
                     <div class="carousel__control-next"></div>
                 </div>
             </div>
+
         </div>
 
         <script src="vendor/jquery/jquery-2.2.2.min.js"></script>
